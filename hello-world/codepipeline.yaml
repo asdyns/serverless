@@ -38,7 +38,7 @@ Parameters:
     Default: "main"
   SamTemplate:
     Type: String
-    Default: "template.yaml"
+    Default: "hello-world/template.yaml"
   TestingRegion:
     Type: String
     Default: "ap-southeast-2"
@@ -150,7 +150,7 @@ Resources:
                 RoleArn: !GetAtt PipelineStackCloudFormationExecutionRole.Arn
                 StackName: !Ref AWS::StackName
                 ChangeSetName: !Sub ${AWS::StackName}-ChangeSet
-                TemplatePath: SourceCodeAsZip::codepipeline.yaml
+                TemplatePath: SourceCodeAsZip::hello-world/codepipeline.yaml
                 Capabilities: CAPABILITY_NAMED_IAM
                 ParameterOverrides: !Sub |
                   {
