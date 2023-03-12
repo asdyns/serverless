@@ -32,7 +32,7 @@ Parameters:
     Default: "GitHub"
   FullRepositoryId:
     Type: String
-    Default: "asdyns/serverless/hello_world"
+    Default: "asdyns/serverless"
   MainGitBranch:
     Type: String
     Default: "main"
