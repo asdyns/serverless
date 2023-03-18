@@ -7,3 +7,5 @@ phases:
     commands:
       # trigger the unit tests here
       - echo 'Running unit tests'
+      - pip3 install pytest pytest-mock
+      - python3 -m pytest hello-world/tests/unit
